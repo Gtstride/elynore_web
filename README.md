@@ -5,7 +5,7 @@ IT / Software Company
 <br />
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web">
-    <img src="image/logo.jfif" alt="Logo" width="80" height="80">
+    <img src="image/logo.jfif" alt="Logo" width="80" height="90">
   </a>
   <h3 align="center">Elynore-web</h3>
 
@@ -49,7 +49,7 @@ IT / Software Company
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Elynore_Web Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Gtstride`, `elynore_web`,`project_title`, `project_description`
 
