@@ -5,11 +5,7 @@ IT / Software Company
 <br />
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web/edit/main/README.md">
-<<<<<<< HEAD
     <img src="image/logo.jfif" alt="Logo" width="80" height="80">
-=======
-    <img src="image/logo.jpeg" alt="Logo" width="80" height="80">
->>>>>>> 9a65052a91cde38b5cd30f762b5ac636f89453cb
   </a>
 </div>
 
