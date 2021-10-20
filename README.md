@@ -5,7 +5,7 @@ IT / Software Company
 <br />
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web/edit/main/README.md">
-    <img src="image/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="image/logo.jfif" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Elynore Web-README</h3>
@@ -37,9 +37,9 @@ IT / Software Company
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+- [Vue.js](https://vuejs.org/)
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
-- [Express](https://angular.io/)
 - [Bootstrap](https://getbootstrap.com)
 - [JQuery](https://jquery.com)
 
@@ -54,10 +54,13 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 
-- npm
+- yarn
+
   ```sh
-  npm install npm@latest -g
+  yarn install
   ```
+
+- Contributors must be familiar with command line interface (or CLI), Javascript, Git/Github
 
 ### Installation
 
@@ -66,11 +69,15 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/Gtstride/elynore_web.git
    ```
-3. Install NPM packages
+3. Install YARN packages
    ```sh
-   npm install
+   yarn install
    ```
-4. Enter your API in `config.js`
+4. Cd into your working folder
+   ```sh
+   cd <folder name>
+   ```
+5. Enter your API in `config.js`
    ```js
    const API_KEY = "ENTER YOUR API";
    ```
