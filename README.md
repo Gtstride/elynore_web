@@ -5,7 +5,7 @@ IT / Software Company
 <br />
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web">
-    <img src="image/logo.jfif" alt="Logo" width="80" height="90">
+    <img src="image/logo1.jpeg" alt="Logo" width="80" height="90">
   </a>
   <h3 align="center">Elynore-web</h3>
 
@@ -81,11 +81,11 @@ This is an example of how to list things you need to use the software and how to
   ```
 - Contributors must be familiar with;
 
-```sh
-1. command line interface(CLI)
-2. Javascript
-3. Git/Github
-```
+  ```sh
+  1. Command line interface(CLI)
+  2. Javascript
+  3. Git/Github
+  ```
 
 ## Contributing
 
@@ -128,7 +128,9 @@ Don't forget to give the project a star! Thanks again!
 
 ## Roadmap
 
-- /_[Home link]_/ Home
+<!-- - /_[Home link]_/ Home -->
+
+- Home
 - About us
 - Services
 - Contact
