@@ -7,6 +7,7 @@ IT / Software Company
   <a href="https://github.com/Gtstride/elynore_web/edit/main/README.md">
     <img src="image/logo.jpeg" alt="Logo" width="80" height="80">
   </a>
+</div>
 
   <h3 align="center">Elynore Web-README</h3>
   
