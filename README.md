@@ -82,11 +82,9 @@ This is an example of how to list things you need to use the software and how to
 - Contributors must be familiar with;
 
 ```sh
-<ol>
-    <li>command line interface (or CLI)/li>
-    <li>Javascript</li>
-    <li>Git/Github</li>
-  </ol>
+1. command line interface(CLI)
+2. Javascript
+3. Git/Github
 ```
 
 ## Contributing
@@ -111,15 +109,15 @@ Don't forget to give the project a star! Thanks again!
    ```
 3. Cd into your working folder
 
-```sh
-cd <folder name>
-```
+   ```sh
+   cd <folder name>
+   ```
 
 4. Install YARN packages
 
-```sh
-yarn install
-```
+   ```sh
+   yarn install
+   ```
 
 5. Enter your API in `config.js`
    ```js
@@ -130,27 +128,23 @@ yarn install
 
 ## Roadmap
 
-- [] Home
-- [] About us
-- [] Services
-- [] Contact
+- /_[Home link]_/ Home
+- About us
+- Services
+- Contact
     <!-- - [] Nested Feature -->
 
 See the [open issues](https://github.com/Gtstride/elynore_web/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+<!-- Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com -->
 
 Project Link: [https://github.com/Gtstride/elynore_web](https://github.com/Gtstride/elynore_web)
 
