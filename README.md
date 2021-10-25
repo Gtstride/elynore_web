@@ -5,7 +5,7 @@ IT / Software Company
 <br />
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web">
-    <img src="image/logo1.jpeg" alt="Logo" width="80" height="80">
+    <img src="image/logo.jfif" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Elynore-web</h3>
 
