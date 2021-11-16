@@ -1,0 +1,17 @@
+.navbar-nav {
+    /* background-color: rgb(255, 111, 0); */
+    flex-direction: inherit;
+    margin-top: -13px;
+}
+
+i.search.fa.search-btn.fa-search {
+    cursor: pointer;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.navbar-brand > img {
+    margin-left: 1em;
+    display: block;
+    margin-top: -12px;
+}
