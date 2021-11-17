@@ -51,6 +51,20 @@ app.get("/contacts", auth, (req, res) => {
     });
 });
 
+//delete one contact
+app.delete("/contacts/:id", auth, function (req, res) {
+  Contact.findByIdAndDelete(req.params.id)
+    .exec()
+    .then((result) => {
+      if (!result) {
+        return res.status(404).end();
+      }
+      return res
+        .status(200)
+        .json({ status: "Success", message: "Deleted Successfully" });
+    })
+    .catch((error) => next(err));
+});
 app.listen(5000, function () {
   console.log("App listening on port 5000!");
 });
