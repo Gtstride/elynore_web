@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Elynore_web
 
 IT / Software Company
@@ -6,7 +8,7 @@ IT / Software Company
 
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web">
-    <img src="image/logo.jfif" alt="Logo" width="80" height="90">
+    <img src="image/logo.jfif" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Elynore-web</h3>
 
@@ -59,11 +61,9 @@ IT / Software Company
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Vue.js](https://vuejs.org/)
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -122,7 +122,7 @@ Don't forget to give the project a star! Thanks again!
 
 5. Enter your API in `config.js`
    ```js
-   const API_KEY = "ENTER YOUR API";
+   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
