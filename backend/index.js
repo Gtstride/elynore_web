@@ -11,8 +11,10 @@ const {
 	registerHandler,
 	contactHandler,
 } = require('./middleware/errorHandler');
+const Contact = require('./model/contact');
 
 //import routes
+const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
 const contactRoute = require('./routes/contact');
 
@@ -40,9 +42,12 @@ app.use(function (req, res, next) {
 app.use(express.json());
 
 //route middleware
+app.use('/', authRoute);
+app.use('/admin', registerHandler, authRoute);
 app.use(postRoute);
 app.use('/contact', contactHandler, contactRoute);
 
+//get all contacts
 app.get('/contacts', auth, (req, res) => {
 	Contact.find()
 		.then((users) => {
