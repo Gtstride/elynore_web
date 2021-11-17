@@ -3,6 +3,7 @@
 IT / Software Company
 
 <br />
+
 <div align="center">
   <a href="https://github.com/Gtstride/elynore_web">
     <img src="image/logo.jfif" alt="Logo" width="80" height="90">
