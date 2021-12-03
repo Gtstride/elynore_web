@@ -11,7 +11,7 @@ const verifyToken = (req, res, next) => {
 		return res.status(403).send('Unauthorized');
 	}
 	try {
-		const decoded = jwt.verify(token, config.TOKEN_SECRET);
+		const decoded = jwt.verify(token, 'secret');
 		req.User = decoded;
 	} catch (err) {
 		return res.status(401).send('Invalid Token');
