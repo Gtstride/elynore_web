@@ -13,11 +13,12 @@ const db = {};
 let sequelize;
 if (config.use_env_variable) {
 	sequelize = new Sequelize(process.env[config.use_env_variable], config);
+	console.log(use_env_variable);
 } else {
 	sequelize = new Sequelize(
-		(config.database = process.env.DB_name),
-		(config.username = process.env.DB_username),
-		(config.password = process.env.DB_password),
+		config.database,
+		config.username,
+		config.password,
 		config
 	);
 }
@@ -45,7 +46,3 @@ Object.keys(db).forEach((modelName) => {
 db.sequelize = sequelize;
 
 module.exports = db;
-module.exports = {
-	use_env_variables: 'DB_URL',
-	dialect: 'postgres',
-};
