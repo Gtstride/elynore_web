@@ -1,6 +1,6 @@
 {
 	"development": {
-		"URL": "postgres://postgres:1234567890@localhost:5432/elynore_database",
+		"use_env_variable": "postgres:1234567890@localhost:5432/elynore_database",
 		"username": "postgres",
 		"password": 1234567890,
 		"database": "elynore_database",
