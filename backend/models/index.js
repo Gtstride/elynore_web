@@ -46,6 +46,6 @@ db.sequelize = sequelize;
 
 module.exports = db;
 module.exports = {
-	use_env_variables: 'DATABASE_URL',
+	use_env_variables: 'DB_URL',
 	dialect: 'postgres',
 };
