@@ -45,3 +45,7 @@ Object.keys(db).forEach((modelName) => {
 db.sequelize = sequelize;
 
 module.exports = db;
+module.exports = {
+	use_env_variables: 'DATABASE_URL',
+	dialect: 'postgres',
+};
