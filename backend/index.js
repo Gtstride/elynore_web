@@ -10,18 +10,6 @@ app.use(cors());
 const { sequelize } = require('./models');
 
 //end point routes
-app.use(function (err, req, res, next) {
-	if (err.status === 404) {
-		var data = {
-			title: '404 Not Found',
-			content: 'Oops, page not found!',
-		};
-		res.render('pages/404', data);
-	} else {
-		return next();
-	}
-});
-
 const postRoute = require('./routes/note');
 app.use(postRoute);
 
