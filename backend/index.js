@@ -23,5 +23,5 @@ const port = process.env.PORT || 5000;
 app.listen(port, async () => {
 	console.log('App listening on port 5000!');
 	await sequelize.authenticate();
-	console.log('Database Connected successfully!');
+	console.log('Database is Connected successfully!');
 });
