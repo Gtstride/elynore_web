@@ -6,21 +6,5 @@
 		"database": "elynore_database",
 		"host": "127.0.0.1",
 		"dialect": "postgres"
-	},
-	"test": {
-		"URL": "postgres://postgres:1234567890@localhost:5432/elynore_database",
-		"username": "postgres",
-		"password": 1234567890,
-		"database": "elynore_database",
-		"host": "127.0.0.1",
-		"dialect": "postgres"
-	},
-	"production": {
-		"URL": "postgres://postgres:1234567890@localhost:5432/elynore_database",
-		"username": "postgres",
-		"password": 1234567890,
-		"database": "elynore_database",
-		"host": "127.0.0.1",
-		"dialect": "postgres"
 	}
 }
