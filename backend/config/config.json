@@ -1,6 +1,6 @@
 {
 	"development": {
-		"use_env_variable": "postgres:1234567890@localhost:5432/elynore_database",
+		"URL": "Process.env.use_env_variable",
 		"username": "postgres",
 		"password": 1234567890,
 		"database": "elynore_database",
