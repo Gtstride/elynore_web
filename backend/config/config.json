@@ -1,10 +1,13 @@
 {
 	"development": {
-		"URL": "Process.env.use_env_variable",
 		"username": "postgres",
 		"password": 1234567890,
 		"database": "elynore_database",
 		"host": "127.0.0.1",
+		"dialect": "postgres"
+	},
+	"production": {
+		"use_env_variable": "postgresql-curved-69707",
 		"dialect": "postgres"
 	}
 }
