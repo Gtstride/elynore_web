@@ -7,7 +7,10 @@
 		"dialect": "postgres"
 	},
 	"production": {
-		"use_env_variable": "HEROKU_POSTGRESQL_COPPER_URL",
+		"username": "ayhtemlmhosobt",
+		"password": "d01b706798dd53207544314d6f28b6c16ea8a3649abd038c4257fd24c9311c33",
+		"database": "ddv4dmtbshirqv",
+		"host": "ec2-44-193-111-218.compute-1.amazonaws.com",
 		"dialect": "postgres"
 	}
 }
