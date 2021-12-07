@@ -7,7 +7,7 @@
 		"dialect": "postgres"
 	},
 	"production": {
-		"use_env_variable": "postgresql-curved-69707",
+		"use_env_variable": "heroku-postgresql_URL",
 		"dialect": "postgres"
 	}
 }
