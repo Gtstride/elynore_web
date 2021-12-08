@@ -52,19 +52,19 @@ app.post('/register', registerHandler, async (req, res) => {
 //login
 app.post('/login', async (req, res) => {
 	const { email, password } = req.body;
+
 	//checking if the email exists
-	const user = await User.findOne({ email: req.body.email });
-	if (!user) return res.status(400).json('Email is not found');
+	if (!User || User.email !== email)
+		return res.status(400).json('Email is not found');
 
 	//password check
-	if (!user || user.password !== password) {
+	if (!User || User.password !== password) {
 		return res.status(400).json('Invalid password');
 	}
 
 	//create and assign a token
 	const token = jwt.sign({ _id: User._id }, 'secret');
 	User.token = token;
-	console.log(token);
 	return res.status(200).json({ user: User.email, token: token });
 });
 

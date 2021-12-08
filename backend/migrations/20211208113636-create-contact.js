@@ -3,12 +3,16 @@
 'use strict';
 module.exports = {
 	up: async (queryInterface, Sequelize) => {
-		await queryInterface.createTable('Users', {
+		await queryInterface.createTable('contacts', {
 			id: {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
 				type: Sequelize.INTEGER,
+			},
+			uuid: {
+				type: DataTypes.UUID,
+				defaultValue: DataTypes.UUIDV4,
 			},
 			name: {
 				type: Sequelize.STRING,
@@ -16,7 +20,13 @@ module.exports = {
 			email: {
 				type: Sequelize.STRING,
 			},
-			password: {
+			subject: {
+				type: Sequelize.STRING,
+			},
+			company: {
+				type: Sequelize.STRING,
+			},
+			message: {
 				type: Sequelize.STRING,
 			},
 			createdAt: {
@@ -30,6 +40,6 @@ module.exports = {
 		});
 	},
 	down: async (queryInterface, Sequelize) => {
-		await queryInterface.dropTable('Users');
+		await queryInterface.dropTable('contacts');
 	},
 };

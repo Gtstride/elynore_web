@@ -16,13 +16,18 @@ module.exports = (sequelize, DataTypes) => {
 	User.init(
 		{
 			name: DataTypes.STRING,
-			email: DataTypes.STRING,
+			email: {
+				type: DataTypes.STRING,
+				validate: {
+					isEmail: { msg: 'Email must be valid' },
+				},
+			},
 			password: DataTypes.STRING,
+			encryptedPassword: DataTypes.STRING,
 		},
 		{
 			sequelize,
 			modelName: 'User',
-			tableName: 'Users',
 		}
 	);
 	return User;
