@@ -22,7 +22,7 @@ if (config.use_env_variable) {
 		config,
 		{
 			dialectOptions: {
-				ssl: { rejectUnauthorized: false },
+				ssl: { require: true, rejectUnauthorized: false },
 			},
 		}
 	);
