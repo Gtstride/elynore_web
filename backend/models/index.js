@@ -20,6 +20,7 @@ if (config.use_env_variable) {
 		config.username,
 		config.password,
 		config,
+		process.env.DATABASE_URL,
 		{
 			dialectOptions: {
 				ssl: { require: true, rejectUnauthorized: false },
