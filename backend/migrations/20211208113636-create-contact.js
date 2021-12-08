@@ -1,45 +1,48 @@
 /** @format */
 
 'use strict';
+
+const { DataTypes } = require('sequelize/dist');
+
 module.exports = {
-	up: async (queryInterface, Sequelize) => {
+	up: async (queryInterface, DataTypes) => {
 		await queryInterface.createTable('contacts', {
 			id: {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
-				type: Sequelize.INTEGER,
+				type: DataTypes.INTEGER,
 			},
 			uuid: {
 				type: DataTypes.UUID,
 				defaultValue: DataTypes.UUIDV4,
 			},
 			name: {
-				type: Sequelize.STRING,
+				type: DataTypes.STRING,
 			},
 			email: {
-				type: Sequelize.STRING,
+				type: DataTypes.STRING,
 			},
 			subject: {
-				type: Sequelize.STRING,
+				type: DataTypes.STRING,
 			},
 			company: {
-				type: Sequelize.STRING,
+				type: DataTypes.STRING,
 			},
 			message: {
-				type: Sequelize.STRING,
+				type: DataTypes.STRING,
 			},
 			createdAt: {
 				allowNull: false,
-				type: Sequelize.DATE,
+				type: DataTypes.DATE,
 			},
 			updatedAt: {
 				allowNull: false,
-				type: Sequelize.DATE,
+				type: DataTypes.DATE,
 			},
 		});
 	},
-	down: async (queryInterface, Sequelize) => {
+	down: async (queryInterface, DataTypes) => {
 		await queryInterface.dropTable('contacts');
 	},
 };
