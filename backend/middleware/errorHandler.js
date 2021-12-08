@@ -1,21 +1,5 @@
 /** @format */
 
-exports.registerHandler = (req, res, next) => {
-	if (!req.body.name) {
-		return res.status(400).json({
-			status: 'error',
-			message: 'Full-name is required!',
-		});
-	}
-	if (!req.body.email) {
-		return res.status(400).json({
-			status: 'error',
-			message: 'Email is required!',
-		});
-	}
-	return next();
-};
-
 exports.contactHandler = (req, res, next) => {
 	if (!req.body.name) {
 		return res.status(400).json({
@@ -44,5 +28,28 @@ exports.contactHandler = (req, res, next) => {
 	return next();
 };
 
-exports.registerHandler;
+exports.registerHandler = (req, res, next) => {
+	let error = [];
+	if (!req.body.name) {
+		return res.status(400).json({
+			status: 'error',
+			message: 'Full-name is required!',
+		});
+	}
+	if (!req.body.email) {
+		return res.status(400).json({
+			status: 'error',
+			message: 'Email is required!',
+		});
+	}
+	if (!req.body.password) {
+		return res.status(400).json({
+			status: 'error',
+			message: 'Password is required!',
+		});
+	}
+	return next();
+};
+
 exports.contactHandler;
+exports.registerHandler;
