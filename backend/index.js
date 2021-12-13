@@ -25,15 +25,3 @@ app.listen(port, async () => {
 	await sequelize.authenticate();
 	console.log('Database is Connected successfully!');
 });
-
-// const pg = require('pg');
-
-// // pg.connect(process.env.DATABASE_URL, function (err, client, done) {
-// // 	console.log(err + '!!!!!!!!!!!!!!!');
-// // 	console.log(process.env.DATABASE_URL);
-// // 	client.query('SELECT * FROM Users', function (err, result) {
-// // 		done();
-// // 		if (err) return console.error(err);
-// // 		console.log(result.rows);
-// // 	});
-// // });
