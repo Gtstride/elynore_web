@@ -1,36 +1,41 @@
+/** @format */
+
 'use strict';
+
+const { DataTypes } = require('sequelize/dist');
+
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Users', {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      name: {
-        type: Sequelize.STRING
-      },
-      email: {
-        type: Sequelize.STRING
-      },
-      password: {
-        type: Sequelize.STRING
-      },
-      encryptedPassword: {
-        type: Sequelize.STRING
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      }
-    });
-  },
-  down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Users');
-  }
+	up: async (queryInterface, DataTypes) => {
+		await queryInterface.createTable('Users', {
+			id: {
+				allowNull: false,
+				autoIncrement: true,
+				primaryKey: true,
+				type: DataTypes.INTEGER,
+			},
+			name: {
+				type: DataTypes.STRING,
+			},
+			email: {
+				type: DataTypes.STRING,
+			},
+			password: {
+				type: DataTypes.STRING,
+			},
+			encryptedPassword: {
+				type: DataTypes.STRING,
+			},
+			createdAt: {
+				allowNull: false,
+				type: DataTypes.DATE,
+			},
+			updatedAt: {
+				allowNull: false,
+				type: DataTypes.DATE,
+			},
+		});
+	},
+	down: async (queryInterface, DataTypes) => {
+		await queryInterface.dropTable('Users');
+	},
 };
