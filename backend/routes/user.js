@@ -1,4 +1,5 @@
 /** @format */
+
 const express = require('express');
 const app = express();
 const { User } = require('../models');
@@ -9,6 +10,10 @@ const { registerHandler } = require('../middleware/errorHandler');
 //register;
 app.post('/register', registerHandler, async (req, res) => {
 	const { name, email, password } = req.body;
+
+	const emailExist = await User.findOne({ where: { email } });
+	if (emailExist)
+		return res.status(400).json('User Already Exist. Please Login');
 
 	// lets validate the data before use
 	const validatePassword = (password) => {
@@ -53,19 +58,18 @@ app.post('/register', registerHandler, async (req, res) => {
 app.post('/login', async (req, res) => {
 	const { email, password } = req.body;
 
-	//checking if the email exists
-	if (!User || User.email !== email)
-		return res.status(400).json('Email is not found');
+	const user = await User.findOne({ where: { email } });
+	if (!user) return res.status(400).json('Email is not found');
 
 	//password check
-	if (!User || User.password !== password) {
+	if (!user || user.password !== password) {
 		return res.status(400).json('Invalid password');
 	}
 
 	//create and assign a token
-	const token = jwt.sign({ _id: User._id }, 'secret');
-	User.token = token;
-	return res.status(200).json({ user: User.email, token: token });
+	const token = jwt.sign({ _id: user._id }, 'secret');
+	user.token = token;
+	return res.status(200).json({ user: user.email, token: token });
 });
 
 module.exports = app;
